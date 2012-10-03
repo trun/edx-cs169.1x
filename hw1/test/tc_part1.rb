@@ -24,5 +24,11 @@ class TestPart1 < Test::Unit::TestCase
           'bee' => 2
       }.eql?(count_words "Doo bee doo bee doo")
     end
+    assert_block do
+      {
+          'what' => 3,
+          'the' => 2
+      }.eql?(count_words "what the what the what")
+    end
   end
 end
